@@ -1,1 +1,38 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
+}
+
+.diamond {
+  color: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+
+.card {
+  background-color: white;
+}
