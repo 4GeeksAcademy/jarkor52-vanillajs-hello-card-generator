@@ -1,4 +1,3 @@
-
 const suits = ["heart", "spade", "club", "diamond"];
 
 const values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jota", "Reina", "Rey", "As"];
@@ -12,9 +11,8 @@ function generateRandomCard() {
   const suit = suits[suitIndex];
   const value = values[valueIndex];
 
+  cardElement.innerHTML = `<span class="symbol">${getSuitSymbol(suit)}</span>${value}<span class="bottom-right-symbol">${getSuitSymbol(suit)}</span>`;
   cardElement.className = `card ${suit}`;
-
-  cardElement.textContent = `${value} ${getSuitSymbol(suit)}`;
 }
 
 function getSuitSymbol(suit) {
@@ -35,3 +33,4 @@ function getSuitSymbol(suit) {
 generateRandomCard();
 
 cardElement.addEventListener("click", generateRandomCard);
+

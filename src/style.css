@@ -36,3 +36,29 @@ body {
 .card {
   background-color: white;
 }
+
+.card {
+  font-size: 24px;
+  width: 100px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.symbol {
+  position: absolute;
+  font-size: 14px;
+  top: 5px;
+  left: 5px;
+}
+
+.bottom-right-symbol {
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+  right: 5px;
+}
